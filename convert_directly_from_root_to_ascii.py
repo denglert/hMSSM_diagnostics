@@ -97,8 +97,8 @@ write_histo_contents(br_h_gamgam, './data/ascii/directly_from_root_file_br_h_gam
 write_histo_contents(m_H,         './data/ascii/directly_from_root_file_m_H.dat')
 write_histo_contents(Gamma_H,     './data/ascii/directly_from_root_file_Gamma_H.dat')
 
-save_binning(xs_gg_H, './data/ascii/directly_from_root_filexs_gg_H_binning.dat')
-save_binning(br_H_hh, './data/ascii/directly_from_root_filebr_H_hh_binning.dat')
+save_binning(xs_gg_H, './data/ascii/directly_from_root_file_xs_gg_H_binning.dat')
+save_binning(br_H_hh, './data/ascii/directly_from_root_file_br_H_hh_binning.dat')
 save_binning(br_h_tautau, './data/ascii/directly_from_root_file_br_h_tautau_binning.dat')
 
 #plot_histo(xs_gg_H, 'xs_gg_H.pdf')
