@@ -29,7 +29,7 @@ def write_to_file(mA_min, mA_binwidth, mA_n, tanb_min, tanb_binwidth, tanb_n, ou
     with open(output_file_path, "w") as f_out:
     
         # - Header
-        f_out.write("mA tanb xsec_gg_H")
+        f_out.write("mA tanb xsec_gg_H\n")
     
         for mA in mAs:
             for tanb in tanbs:
