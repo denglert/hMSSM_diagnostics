@@ -27,5 +27,5 @@ vimdiff ./data/ascii/written_with_mssm_tools_mA_5.0_tanb_0.2_int_off.dat ./data/
 tanb stepsize = 1.0
 
 ~~~~
-vimdiff ./data/ascii/written_with_mssm_tools_mA_5.0_tanb_1.1_int_off.dat ./data/ascii/written_with_mssm_tools_mA_5.0_tanb_1.0_int_on.dat
+vimdiff ./data/ascii/written_with_mssm_tools_mA_5.0_tanb_1.0_int_off.dat ./data/ascii/written_with_mssm_tools_mA_5.0_tanb_1.0_int_on.dat
 ~~~~
