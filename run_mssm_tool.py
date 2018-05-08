@@ -39,14 +39,14 @@ def write_to_file(mA_min, mA_binwidth, mA_n, tanb_min, tanb_binwidth, tanb_n, ou
         
 
 
-write_to_file(180.0, 5.0, 84, 1.0, 0.1, 40, "./data/ascii/hMSSM_mA_5.0_tanb_0.1_int_on.dat",  interpolation=True)
-write_to_file(180.0, 5.0, 84, 1.0, 0.1, 40, "./data/ascii/hMSSM_mA_5.0_tanb_0.1_int_off.dat", interpolation=False)
+write_to_file(180.0, 5.0, 84, 1.0, 0.1, 40, "./data/ascii/written_with_mssm_tools_mA_5.0_tanb_0.1_int_on.dat",  interpolation=True)
+write_to_file(180.0, 5.0, 84, 1.0, 0.1, 40, "./data/ascii/written_with_mssm_tools_mA_5.0_tanb_0.1_int_off.dat", interpolation=False)
 
-write_to_file(180.0, 5.0, 84, 1.0, 0.2, 40, "./data/ascii/hMSSM_mA_5.0_tanb_0.2_int_on.dat",  interpolation=True)
-write_to_file(180.0, 5.0, 84, 1.0, 0.2, 40, "./data/ascii/hMSSM_mA_5.0_tanb_0.2_int_off.dat", interpolation=False)
+write_to_file(180.0, 5.0, 84, 1.0, 0.2, 40, "./data/ascii/written_with_mssm_tools_mA_5.0_tanb_0.2_int_on.dat",  interpolation=True)
+write_to_file(180.0, 5.0, 84, 1.0, 0.2, 40, "./data/ascii/written_with_mssm_tools_mA_5.0_tanb_0.2_int_off.dat", interpolation=False)
 
-write_to_file(180.0, 5.0, 84, 1.0, 0.11, 40, "./data/ascii/hMSSM_mA_5.0_tanb_0.11_int_on.dat",  interpolation=True)
-write_to_file(180.0, 5.0, 84, 1.0, 0.11, 40, "./data/ascii/hMSSM_mA_5.0_tanb_0.11_int_off.dat", interpolation=False)
+write_to_file(180.0, 5.0, 84, 1.0, 0.11, 40, "./data/ascii/written_with_mssm_tools_mA_5.0_tanb_0.11_int_on.dat",  interpolation=True)
+write_to_file(180.0, 5.0, 84, 1.0, 0.11, 40, "./data/ascii/written_with_mssm_tools_mA_5.0_tanb_0.11_int_off.dat", interpolation=False)
 
-write_to_file(180.0, 5.0, 84, 1.0, 1.0, 40, "./data/ascii/hMSSM_mA_5.0_tanb_1.0_int_on.dat",  interpolation=True)
-write_to_file(180.0, 5.0, 84, 1.0, 1.0, 40, "./data/ascii/hMSSM_mA_5.0_tanb_1.0_int_off.dat", interpolation=False)
+write_to_file(180.0, 5.0, 84, 1.0, 1.0, 40, "./data/ascii/written_with_mssm_tools_mA_5.0_tanb_1.0_int_on.dat",  interpolation=True)
+write_to_file(180.0, 5.0, 84, 1.0, 1.0, 40, "./data/ascii/written_with_mssm_tools_mA_5.0_tanb_1.0_int_off.dat", interpolation=False)
