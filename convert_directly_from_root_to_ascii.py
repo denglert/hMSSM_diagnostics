@@ -79,8 +79,8 @@ def write_histo_contents(h, out_file_path):
     for i in range(n_x):
         for j in range(n_y):
 
-            bin_x = bins_x.GetAt(i)
-            bin_y = bins_y.GetAt(j)
+            bin_x = (bins_x.GetAt(i)+bins_x.GetAt(i+1))/2.0
+            bin_y = (bins_y.GetAt(j)+bins_y.GetAt(j+1))/2.0
 
             global_bin = h.GetBin(i,j)
             bin_content = h.GetBinContent(global_bin)
