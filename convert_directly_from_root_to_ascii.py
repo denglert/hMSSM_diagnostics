@@ -69,6 +69,7 @@ def write_histo_contents(h, out_file_path):
     bins_y = ax_y.GetXbins()
 
     f_out = open(out_file_path, 'w')
+    f_out.write("mA_bin_lo mA_bin_ce mA_bin_hi tanb_lo tanb_ce tanb_hi value\n")
 
     x_nbins, x_min,x_max = ax_x.GetNbins(), ax_x.GetXmin(), ax_x.GetXmax()
     y_nbins, y_min,y_max = ax_y.GetNbins(), ax_y.GetXmin(), ax_y.GetXmax()
@@ -76,15 +77,21 @@ def write_histo_contents(h, out_file_path):
     print("x: [{} - {}] nBins: {}".format(x_min, x_max, x_nbins))
     print("y: [{} - {}] nBins: {}".format(y_min, y_max, y_nbins))
 
-    for i in range(n_x):
-        for j in range(n_y):
+    for i in range(n_x+1):
+        for j in range(n_y+1):
 
-            bin_x = (bins_x.GetAt(i)+bins_x.GetAt(i+1))/2.0
-            bin_y = (bins_y.GetAt(j)+bins_y.GetAt(j+1))/2.0
+            bin_x_lo = ax_x.GetBinLowEdge(i)
+            bin_x_ce = ax_x.GetBinCenter(i)
+            bin_x_hi = ax_x.GetBinUpEdge(i)
 
-            global_bin = h.GetBin(i,j)
+            bin_y_lo = ax_y.GetBinLowEdge(j)
+            bin_y_ce = ax_y.GetBinCenter(j)
+            bin_y_hi = ax_y.GetBinUpEdge(j)
+            
+            global_bin = h.FindBin(bin_x_ce,bin_y_ce)
             bin_content = h.GetBinContent(global_bin)
-            row = "{} {} {}".format(bin_x, bin_y, bin_content)
+            row = "{} {} {} {} {} {} {}".format(bin_x_lo, bin_x_ce, bin_x_hi, bin_y_lo, bin_y_ce,
+                    bin_y_hi, bin_content)
             f_out.write(row+'\n')
 
 
