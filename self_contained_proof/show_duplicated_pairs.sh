@@ -5,4 +5,6 @@ hMSSM_13TeV_histogam_link=https://twiki.cern.ch/twiki/pub/LHCPhysics/HXSWG3LowTa
 wget ${hMSSM_13TeV_histogam_link}
 
 
+python write_histogram_contents.py
 
+cat duplicated_pairs.dat
